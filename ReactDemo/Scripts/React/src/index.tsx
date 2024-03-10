@@ -15,4 +15,4 @@ const Render = async (divId: string, componentName: string, config?: any) => {
   ReactDOM.render(component, document.getElementById(divId));
 };
 
-(window as any).React = { Render };
+(window as any).React = { Render }; // Make React variable a global variable to be used inside MVC App
